@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luís França - Locutor de Rádio Sertanejo</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #006400;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            position: relative;
+        }
+        header img {
+            width: 50px;
+            height: auto;
+            position: absolute;
+            left: 20px;
+            top: 10px;
+        }
+        header h1 {
+            font-size: 2.5em;
+            margin: 0;
+        }
+        header h2 {
+            font-size: 1.5em;
+            margin: 0;
+            font-weight: normal;
+        }
+        nav {
+            background-color: #8B4513;
+            padding: 10px;
+            text-align: center;
+        }
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .banner {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .banner img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+        .about, .gallery, .audio-video, .schedule, .contact {
+            margin-bottom: 40px;
+        }
+        h2 {
+            color: #8B4513;
+            border-bottom: 2px solid #006400;
+            padding-bottom: 5px;
+        }
+        .gallery img {
+            width: 30%;
+            margin: 1.66%;
+            border-radius: 8px;
+            transition: transform 0.3s;
+        }
+        .gallery img:hover {
+            transform: scale(1.05);
+        }
+        .audio-video iframe {
+            width: 100%;
+            height: 315px;
+            margin-bottom: 20px;
+            border-radius: 8px;
+        }
+        .contact form {
+            display: flex;
+            flex-direction: column;
+        }
+        .contact input, .contact textarea {
+            margin-bottom: 10px;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+        .contact button {
+            padding: 10px;
+            background-color: #006400;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        .contact button:hover {
+            background-color: #004d00;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="banner.jpg" alt="Rádio Mais Brasil">
+        <h1>Luís França</h1>
+        <h2>Locutor de Rádio Sertanejo</h2>
+    </header>
+    <nav>
+        <a href="#about">Sobre Mim</a>
+        <a href="#gallery">Galeria</a>
+        <a href="#audio-video">Áudio/Vídeo</a>
+        <a href="#schedule">Agenda</a>
+        <a href="#contact">Contato</a>
+    </nav>
+    <div class="container">
+        <section id="about" class="about">
+            <h2>Sobre Mim</h2>
+            <p>Bem-vindo ao meu site! Sou Luís França, locutor de rádio com uma paixão profunda pelo sertanejo. Atualmente, trabalho na Rádio Mais Brasil, onde apresento programas e compartilho a música sertaneja com meus ouvintes. Minha trajetória inclui diversas experiências no mundo da rádio e uma dedicação constante à promoção da cultura sertaneja.</p>
+        </section>
+        <section id="gallery" class="gallery">
+            <h2>Galeria</h2>
+            <img src="foto1.jpg" alt="Imagem 1">
+            <img src="foto2.jpg" alt="Imagem 2">
+            <img src="foto3.jpg" alt="Imagem 3">
+        </section>
+        <section id="audio-video" class="audio-video">
+            <h2>Áudio/Vídeo</h2>
+            <iframe src="https://www.youtube.com/embed/example1" frameborder="0" allowfullscreen></iframe>
+            <iframe src="https://www.youtube.com/embed/example2" frameborder="0" allowfullscreen></iframe>
+        </section>
+        <section id="schedule" class="schedule">
+            <h2>Agenda</h2>
+            <p>Confira os próximos eventos e transmissões ao vivo:</p>
+            <ul>
+                <li>Evento Sertanejo em São Paulo - 20 de Agosto</li>
+                <li>Transmissão ao Vivo na Rádio Mais Brasil - 25 de Agosto</li>
+                <li>Show ao Vivo em Belo Horizonte - 30 de Agosto</li>
+            </ul>
+        </section>
+        <section id="contact" class="contact">
+            <h2>Contato</h2>
+            <form action="mailto:seu-email@example.com" method="post" enctype="text/plain">
+                <input type="text" name="name" placeholder="Seu Nome" required>
+                <input type="email" name="email" placeholder="Seu Email" required>
+                <textarea name="message" rows="5" placeholder="Sua Mensagem" required></textarea>
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+    </div>
+</body>
+</html>
